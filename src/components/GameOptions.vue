@@ -6,7 +6,7 @@
       <label for="normal">Standard</label><br>
       <input id="sound" type="radio" name= "options" value="sound">
       <label for="sound">Sound only</label><br>
-      <input id="light" type="radio" name= "options" value="light">Light only
+      <input id="light" type="radio" name= "options" value="light">
       <label for="light">Light only</label><br>
     </form>
 
