@@ -4,15 +4,20 @@
     <form @change="changeTypeGame">
       <input id="normal" type="radio" name= "options" value="normal" checked>
       <label for="normal">Standard</label><br>
-      <input type="radio" name= "options" value="sound">Sound only<br>
-      <input type="radio" name= "options" value="light">Light only<br>
+      <input id="sound" type="radio" name= "options" value="sound">
+      <label for="sound">Sound only</label><br>
+      <input id="light" type="radio" name= "options" value="light">Light only
+      <label for="light">Light only</label><br>
     </form>
 
     <h2>Game difficulty:</h2>
     <form @change="changeDifficult">
-      <input type="radio" name="difficulty" value="easy" checked>Easy<br>
-      <input type="radio" name="difficulty" value="medium">Medium<br>
-      <input type="radio" name="difficulty" value="hard">Hard<br>
+      <input id="easy" type="radio" name="difficulty" value="easy" checked>
+      <label for="easy">Easy</label><br>
+      <input id="medium" type="radio" name="difficulty" value="medium">
+      <label for="medium">Medium</label><br>
+      <input id="hard" type="radio" name="difficulty" value="hard">
+      <label for="hard">Hard</label><br>
     </form>
   </div>
 </template>
@@ -55,10 +60,11 @@ form {
 }
 
 .game-options input[type="radio"] {
+  width: 20px;
+  height: 20px;
   text-align: left;
 	margin-right: 10px;
   margin-bottom: 15px;
 }
-
 
 </style>
